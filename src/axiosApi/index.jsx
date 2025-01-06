@@ -18,7 +18,10 @@ const axiosApi = axios.create({
 
 // Helper function to set Authorization header
 const setAuthHeader = () => {
-  const token = getCookie(import.meta.env.VITE_TOKEN_NAME) || localStorage.getItem(import.meta.env.VITE_TOKEN_NAME);
+  const token =
+    getCookie(import.meta.env.VITE_TOKEN_NAME) ||
+    sessionStorage.getItem(import.meta.env.VITE_TOKEN_NAME) ||
+    localStorage.getItem(import.meta.env.VITE_TOKEN_NAME);
   if (token) {
     axiosApi.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   } else {

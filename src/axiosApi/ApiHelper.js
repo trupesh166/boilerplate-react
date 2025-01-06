@@ -15,4 +15,7 @@ async function request(method, url, data) {
 // export const postDemo = (data) => request("post", "/api/demo", data);
 // export const getDemo = () => request("get", "/api/demo");
 // export const putDemo = (data) => request("put", "/api/demo", data);
-// export const deleteDemo = () => request("delete", "/api/demo");  
+// export const deleteDemo = () => request("delete", "/api/demo");
+// export const deleteDemo = () => request("delete", "/api/demo");
+// export const deleteDemo = (data,id) => request("post", `/api/demo/${id}`,data);
+// export const deleteDemo = (id) => request("get", `/api/demo/${id}`);
