@@ -1,8 +1,8 @@
 import React from "react";
 import { createBrowserRouter, NavLink, Outlet } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
-import { AuthLayouts } from "@/layouts";
-import { Login } from "@/pages";
+import { AuthLayout, WebLayout } from "@/layouts";
+import { Home, Login } from "@/pages";
 
 const BoilerPlateRoute = createBrowserRouter(
   /* All Paths */
@@ -12,14 +12,19 @@ const BoilerPlateRoute = createBrowserRouter(
       children: [
         /* Website */
         {
-          index: true,
-          element: <NavLink to={"/login"}>Login</NavLink>,
+          element: <WebLayout />,
+          children: [
+            {
+              index: true,
+              element: <Home />,
+            },
+          ],
         },
         /* AuthCation */
         {
           element: (
             <ProtectedRoute>
-              <AuthLayouts />
+              <AuthLayout />
             </ProtectedRoute>
           ),
           children: [
