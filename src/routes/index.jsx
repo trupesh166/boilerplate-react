@@ -1,6 +1,7 @@
 import { createBrowserRouter, NavLink, Outlet } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import { AuthLayouts } from "@/layouts";
+import { Login } from "@/pages";
 
 const NuxHealthRoute = createBrowserRouter(
   /* All Paths */
@@ -23,7 +24,7 @@ const NuxHealthRoute = createBrowserRouter(
           children: [
             {
               path: "login",
-              element: "<Login />",
+              element: <Login />,
             },
           ],
         },
