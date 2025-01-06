@@ -1,9 +1,10 @@
+import React from "react";
 import { createBrowserRouter, NavLink, Outlet } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import { AuthLayouts } from "@/layouts";
 import { Login } from "@/pages";
 
-const NuxHealthRoute = createBrowserRouter(
+const BoilerPlateRoute = createBrowserRouter(
   /* All Paths */
   [
     {
@@ -57,4 +58,4 @@ const NuxHealthRoute = createBrowserRouter(
   }
 );
 
-export default NuxHealthRoute;
+export default BoilerPlateRoute;
