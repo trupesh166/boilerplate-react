@@ -1,1 +1,2 @@
-export { AuthLayouts } from "./Auth/";
+export { AuthLayout } from "./Auth/";
+export { WebLayout } from "./Web/";
