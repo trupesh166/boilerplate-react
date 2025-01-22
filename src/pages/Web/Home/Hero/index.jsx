@@ -1,20 +1,23 @@
-import { Container } from "@/components";
+import { BPButton, Container } from "@/components";
 import React from "react";
 
 export const Hero = () => {
   return (
     <>
-      <div className="py-24 sm:py-32">
+      <div className="py-24 sm:py-32 bg-gradient-to-r from-primary to-primary-foreground">
         <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Welcome to Our Boilerplate React App
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              This is a sample page using our custom Layout component with
-              Header and Footer.
-            </p>
-          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">
+            Streamline Your Workflow
+          </h1>
+          <p className="text-xl sm:text-2xl md:text-3xl text-white mb-10">
+            Boost productivity and simplify your business processes
+          </p>
+          <BPButton
+            size="lg"
+            className="bg-white text-primary hover:bg-gray-100"
+          >
+            Start Free Trial
+          </BPButton>
         </Container>
       </div>
     </>
