@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.10",
+    "@heroicons/react": "^2.1.5",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "clsx": "^2.1.1",

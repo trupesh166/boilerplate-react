@@ -1,10 +1,17 @@
 import React from "react";
 import { Hero } from "./Hero";
+import { CTA } from "./CTA";
+import { FAQ } from "./FAQ";
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+      {/* <Features /> */}
+      {/* <Testimonials /> */}
+      {/* <Pricing /> */}
+      <FAQ />
+      <CTA />
+    </>
   );
 };
